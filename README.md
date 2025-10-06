@@ -14,5 +14,4 @@ Frontend:
 
 - Backend: (ezt is megbeszéljük) - adatbázis szerkezetéért, struktúrájának kialakításáért felelősek, megfeleltetik a frontendnek.
 
-- itt is itt vagyunk
 - Tesztelés: (meg ezt is) - esetlegesen felmerülő hibák kijavítása, projektünk tesztelésért felelősek mielőtt kiadásra kerül.

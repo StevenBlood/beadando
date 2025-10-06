@@ -34,5 +34,5 @@ Regisztrációnkhoz szükség lesz egy teljes névre, email címre, és egy jels
  
 Oldalunk regisztráció hiányában nem működik. A felhasználó a weboldalon a kedvenc filmjei között böngészhet, és azokat értékelheti 1-10-ig terjedő pont(vagy csillag ?)rendszerben.
 (???? többet nem tudok hozzáírni, ez még ahhoz kis projekt)
-
+![Regisztacios abra](regisztracio.png)
 

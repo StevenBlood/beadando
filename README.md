@@ -1,5 +1,5 @@
 # Kis projekt beadandó
-# A Rendszer célja
+## 1. A Rendszer célja
 Filmértékelő, és filmajánló portál
 
 A projektünk célja egy iMDB-hez hasonló, filmekre épülő webalkalmazás létrehozása, amely hatékony információkeresést biztosít a felhasználóknak, és értékelhetik a kedvenc filmjeiket.

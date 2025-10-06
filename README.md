@@ -7,4 +7,12 @@ Projektünk alapját képzi, hogy a felhasználók be tudjanak regisztrálni a r
 Az oldal elsődleges funkciója a filmek adatlapjainak megjelenítése, ahol a látogatók alapvető információkat, leírást és értékeléseket találhatnak. Minden filmhez lehetőség lesz értékelést adni csillagokkal vagy pontszámmal.
 ## 2. Projektterv 
 ### 2.1 Projektszerepkörök
+valami van itt most
+### 2.2 Projektmunkások és felelősségek
+Frontend: 
+- (megbeszéljük hogy kik) - Hatékonyan ialakítják a felhasználók számára látható felületet, a weboldalt stílusozzák, megfeleltetik a backendnek.
 
+- Backend: (ezt is megbeszéljük) - adatbázis szerkezetéért, struktúrájának kialakításáért felelősek, megfeleltetik a frontendnek.
+
+- itt is itt vagyunk
+- Tesztelés: (meg ezt is) - esetlegesen felmerülő hibák kijavítása, projektünk tesztelésért felelősek mielőtt kiadásra kerül.

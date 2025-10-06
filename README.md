@@ -20,7 +20,7 @@ whats this tho
 
 ## 2.4 Mérföldkövek
 Rendszerterv kialakítása
-Rendszer fejlesztésének megkezdése 
+Weboldal fejlesztésének megkezdése
 
 ## 3. Folyamatok modellje (átbeszéljük, példa)
 

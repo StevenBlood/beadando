@@ -10,7 +10,7 @@ Az oldal elsődleges funkciója a filmek adatlapjainak megjelenítése, ahol a l
 valami van itt most
 ### 2.2 Projektmunkások és felelősségek
 Frontend: 
-- (megbeszéljük hogy kik) - Hatékonyan ialakítják a felhasználók számára látható felületet, a weboldalt stílusozzák, megfeleltetik a backendnek.
+- (megbeszéljük hogy kik) - Hatékonyan kialakítják a felhasználók számára látható felületet, a weboldalt stílusozzák, megfeleltetik a backendnek.
 
 - Backend: (ezt is megbeszéljük) - adatbázis szerkezetéért, struktúrájának kialakításáért felelősek, megfeleltetik a frontendnek.
 

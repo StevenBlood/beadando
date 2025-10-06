@@ -7,7 +7,7 @@ Projektünk alapját képzi, hogy a felhasználók be tudjanak regisztrálni a r
 Az oldal elsődleges funkciója a filmek adatlapjainak megjelenítése, ahol a látogatók alapvető információkat, leírást és értékeléseket találhatnak. Minden filmhez lehetőség lesz értékelést adni csillagokkal vagy pontszámmal.
 ## 2. Projektterv 
 ### 2.1 Projektszerepkörök
-valami van itt most
+???
 ### 2.2 Projektmunkások és felelősségek
 Frontend: (megbeszéljük hogy kik) - Hatékonyan kialakítják a felhasználók számára látható felületet, a weboldalt stílusozzák, megfeleltetik a backendnek.
 
@@ -17,14 +17,25 @@ Tesztelés: (meg ezt is) - esetlegesen felmerülő hibák kijavítása, projekt�
 
 ### 2.3 Ütemterv 
 whats this tho
+|Funkció                  |Feladat|Prioritás|  
+|---------------------------|-------|---------|
+|Követelmény specifikáció   |       |         |
+|Funkcionális specifikáció  |       |         |
+Rendszerterv
+Adattárolás                 |adatbázis megvalósítása
+Website                     |
+Website
+Website
+??? nem tudom ez kell -e megbeszéljük
 
 ## 2.4 Mérföldkövek
-Rendszerterv kialakítása
+Rendszerterv kialakítása  
 Weboldal fejlesztésének megkezdése
 
 ## 3. Folyamatok modellje (átbeszéljük, példa)
 
-Rendszerünkbe regisztráció szükséges, melyet egy bejelentkezés követ. A látogató ezután fog hozzáférést kapni weboldalunkhoz, ahol rögtön a filmadatbázisunkkal találja szembe magát. Itt felhasználói (regisztrált felhasználó) jogosultságot kapnak az oldalra látogatók.
+Rendszerünkbe regisztráció szükséges, melyet egy bejelentkezés követ. A látogató ezután fog hozzáférést kapni weboldalunkhoz, ahol rögtön a filmadatbázisunkkal találja szembe magát. 
+Itt felhasználói (regisztrált felhasználó) jogosultságot kapnak az oldalra látogatók.
 
 Üzleti folyamatok:
 

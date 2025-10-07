@@ -9,6 +9,19 @@ Olyan weboldal létrehozása mely számítógépről is elérhető. Hogy a lehet
 Regisztráció - Látogatóink képesek legyenek oldalunkra beregisztrálni melyeket mi biztonságosan eltárolunk, adataikat tudják módosítani.
 Adminisztrátorok keresése: Probléma és hibajelentés esetén, az adminok eléréseit lehet megtekinteni.
 ## Igényelt üzleti folyamatok modellje 
---- 
+- Saját profil szerkesztése- regisztrált felhasználóink élhetnek azzal a lehetőséggel, hogy módosítják saját adataikat
+## Követelménylista 
+| ID  | Modul         | Név                    | Leírás |
+|-----|----------------|------------------------|--------|
+| 1  | Felület        | Bejelentkezés          | A felhasználók itt tudnak bejelentkezni a rendszerbe, ha bejegyzést szeretnének létrehozni. Probléma esetén üzenetet küldeni a rendszert karbantartóknak, illetve a saját profiljával felmerült problémákat javíthatja, ez lehet elfelejtett vagy jelszó. |
+| 2  | Felület        | Filmek borítóképe      | A felhasználók megtekinthetik filmadatbázisunkat, filmek borítóképét, és az értékelés helyét. |
+| 3  | Felület        | Kategóriák             | A felhasználók választani tudnak a megtekinteni kívánt tartalmak között, itt megjelennek formátum és tartalom szerint szétbontva. |
+| 4  | Felület        | Profil                 | A felhasználók a saját profiljuk módosításait eszközölhetik, láthatóvá válnak az adott bejegyzésekre küldött interakciók, pontozások is. |
+| 6  | Felület        | Regisztráció           | A felhasználók ezen az oldalon tudnak saját fiókot létrehozni a rendszerben, így jogokat kapnak filmek értékelésére. |
+| 7  | Modifikáció    | Jelszó módosítása      | A felhasználónak lehetősége van módosítani saját jelszavát, megadva a régi majd az új verziót. |
+| 8  | Modifikáció    | Felhasználó módosítása | A felhasználónak lehetősége van saját felhasználónevének módosítására. |
+| 9  | Jogosultság    | Jogosultsági szintek   | - **Admin:** bejegyzések törlése<br>- **Felhasználó:** tartalmak megtekintése, filmek értékelése <br> |
 ## Fogalomtár 
---- 
+ADMIN - (angol: admin) Az oldal adminisztrálásáért felelős személy
+
+

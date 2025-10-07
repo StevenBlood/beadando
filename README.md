@@ -6,27 +6,48 @@ A projektünk célja egy iMDB-hez hasonló, filmekre épülő webalkalmazás lé
 Projektünk alapját képzi, hogy a felhasználók be tudjanak regisztrálni a rendszerünkbe alapvető adatokkal, majd egy gyors bejelentkezést követően, hozzáférjenek a filmadatbázishoz. 
 Az oldal elsődleges funkciója a filmek adatlapjainak megjelenítése, ahol a látogatók alapvető információkat, leírást és értékeléseket találhatnak. Minden filmhez lehetőség lesz értékelést adni csillagokkal vagy pontszámmal.
 ## 2. Projektterv 
-### 2.1 Projektszerepkörök
-???
-### 2.2 Projektmunkások és felelősségek
-Frontend: (megbeszéljük hogy kik) - Hatékonyan kialakítják a felhasználók számára látható felületet, a weboldalt stílusozzák, megfeleltetik a backendnek.
+### Projektmunkások és felelősségek (ezeket ábeszéljük még, példa)
+Frontend: 
+- Filipcsei István Koppány  
+- Veres Dóra  
+Feladatuk:  Hatékonyan kialakítják a felhasználók számára látható felületet, a weboldalt stílusozzák, megfeleltetik a backendnek.
 
-Backend: (ezt is megbeszéljük) - adatbázis szerkezetéért, struktúrájának kialakításáért felelősek, megfeleltetik a frontendnek.
+Backend: 
+- Varga Erik  
+- Veres Dóra  
+Feladatuk:  adatbázis szerkezetéért, struktúrájának kialakításáért felelősek, megfeleltetik a frontendnek.
 
-Tesztelés: (meg ezt is) - esetlegesen felmerülő hibák kijavítása, projektünk tesztelésért felelősek mielőtt kiadásra kerül.
+Tesztelés: 
+- Filipcsei István Koppány  
+- Varga Erik
+Feladatuk:  esetlegesen felmerülő hibák kijavítása, projektünk tesztelésért felelősek mielőtt kiadásra kerül.
 
-### 2.3 Ütemterv 
-whats this tho
-|Funkció                  |Feladat|Prioritás|  
-|---------------------------|-------|---------|
-|Követelmény specifikáció   |       |         |
-|Funkcionális specifikáció  |       |         |
-Rendszerterv
-Adattárolás                 |adatbázis megvalósítása
-Website                     |
-Website
-Website
-??? nem tudom ez kell -e megbeszéljük
+## Üzleti folyamatok modellje
+Adminisztrátor  
+
+- bejelentkezés
+- filmek megtekintése kéről  
+- filmek értékelése  
+- filmek hozzáadása
+- 
+Felhasználó
+- bejelentkezés  
+- filmek megtekintése borítókép alapján  
+- filmek értékelése
+  
+Látogató  
+- Regisztráció  
+
+##K övetelmények
+### Funckionális követelmények
+- Felhasználók adatainak tárolása (felhasználónév, jelszó, email)
+- Webes környezeten működőképes
+- A webes felület gördülékenyen kommunikál a hozzárendelt adatbázissal
+### Nem funkcionális követelmények
+- Felhasználók nem férhetnek hozzá más felhasználók személyes adataihoz csak a felhasználónevüket és profilképüket láthatják
+- Webes felületen kezel adatbázist
+- A felhasználók nem módosíthatják más felhaszálók értékeléseit
+- Használatához telepítés nem szükséges, különböző kiegészítők használata nélkül is elérhető
 
 ## 2.4 Mérföldkövek
 Rendszerterv kialakítása  

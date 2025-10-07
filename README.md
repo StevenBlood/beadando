@@ -68,7 +68,7 @@ Backend Server
 Frontend kliens
 
 ## Adatbázis terv (DBML/dbdiagram.io)
-###Táblák
+### Táblák
 Felhasználók (id, name, email, password, created_at)
 Filmek (id, title, director, category, released, description, created_at)
 Értékelések (id, rating, user_id, movie_id, created_at)

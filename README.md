@@ -67,7 +67,70 @@ Backend Server
 
 Frontend kliens
 
-## Adatbázis terv
+## Adatbázis terv (DBML/dbdiagram.io)
+###Táblák
+
+//Felhasználók
+Table users {
+  id integer [primary key, increment]
+  nev varchar unique [not null]
+  email varchar unique [not null]
+  password varchar [not null]
+  created_at timestamp
+}
+
+//Filmek
+Table movies {
+  id integer [primary key, increment]
+  title varchar [not null]
+  director varchar [not null]
+  category varchar [not null]
+  released year [not null]
+  description text
+  created_at timestamp
+}
+
+//Értékelések
+Table ratings {
+  id integer [primary key, increment]
+  rating decimal(3, 1) [not null]
+  user_id integer [not null]
+  movie_id integer [not null]
+  created_at timestamp
+}
+
+//Kommentek
+Table comments {
+  id integer [primary key, increment]
+  comment text [not null]
+  user_id integer [not null]
+  movie_id integer [not null]
+  parent integer
+  create_at timestamp
+}
+
+//Kategóriák
+Table categories {
+  id integer [primary key, increment]
+  name varchar [not null]
+}
+
+###Kapcsolatok
+
+//Egy film több komment és értékelés
+Ref: comments.movie_id > movies.id
+Ref: ratings.movie_id > movies.id
+
+//Egy felhasználó több komment és értékelés
+Ref: comments.user_id > users.id
+Ref: ratings.user_id > users.id
+
+//Kommentek és válaszok kapcsolata
+Ref: comments.parent < comments.id
+
+//Filmek és kategóriák kapcsolata
+Ref: movies.category > categories.id
+
 
 ## Implementációs terv
 

@@ -38,7 +38,7 @@ Felhasználó
 Látogató  
 - Regisztráció  
 
-##K övetelmények
+## Követelmények
 ### Funckionális követelmények
 - Felhasználók adatainak tárolása (felhasználónév, jelszó, email)
 - Webes környezeten működőképes
@@ -49,21 +49,35 @@ Látogató
 - A felhasználók nem módosíthatják más felhaszálók értékeléseit
 - Használatához telepítés nem szükséges, különböző kiegészítők használata nélkül is elérhető
 
+## Funkcionális terv
+### Rendszerszereplők
+Admin
+- a rendszer felügyelete az elsődleges feladata, ennek tesztelésére minden szerepkörbe be tud lépni, hogy ellenőrizze azok hibamentes üzemelését
+Felhasználó
+- jogában áll regisztrációt követően oldalunkra bejelentkezni, megtekinteni filmadatbázisunkat, és ezekre visszajelzést adni
+Látogató
+- csak regisztráció után érhető el számára weboldalunk
+
+## Fizikai környezet
+- Projetkünk weboldalra készül, internethozzáférés szükséges.
+- Futtatáshoz semmilyen telepítés nem szükséges.
+
+## Architekturális terv
+Backend Server 
+
+Frontend kliens
+
+## Adatbázis terv
+
+## Implementációs terv
+
+# Tesztterv
+## Telepítési terv
+## Karbantartási terv 
+Weboldalunkat aktívan karbantartjuk és figyeljük hogy az esetleges hibák kijavításra kerüljenek. 
+
+## Rendszeres karabantartás 
+
 ## 2.4 Mérföldkövek
 Rendszerterv kialakítása  
-Weboldal fejlesztésének megkezdése
-
-## 3. Folyamatok modellje (átbeszéljük, példa)
-
-Rendszerünkbe regisztráció szükséges, melyet egy bejelentkezés követ. A látogató ezután fog hozzáférést kapni weboldalunkhoz, ahol rögtön a filmadatbázisunkkal találja szembe magát. 
-Itt felhasználói (regisztrált felhasználó) jogosultságot kapnak az oldalra látogatók.
-
-Üzleti folyamatok:
-
-Regisztrációnkhoz szükség lesz egy teljes névre, email címre, és egy jelszóra. Ezt követően a bejelentkezés oldalon az email címet, és a jelszót kérjük, a bejelentkezés gombra kattintva elérhetjük a weboldalt. Ha a bejelentkezés vagy a regisztráció sikertelen, hibaüzenetben jelezzük.
-
-Üzleti folyamatok a felhasználók számára:
- 
-Oldalunk regisztráció hiányában nem működik. A felhasználó a weboldalon a kedvenc filmjei között böngészhet, és azokat értékelheti 1-10-ig terjedő pont(vagy csillag ?)rendszerben.
-(???? többet nem tudok hozzáírni, ez még ahhoz kis projekt)
-
+Követelményspecifikáció megírása

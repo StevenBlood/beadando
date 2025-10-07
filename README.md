@@ -68,6 +68,13 @@ Backend Server
 Frontend kliens
 
 ## Adatbázis terv (DBML/dbdiagram.io)
+###Táblák
+Felhasználók (id, name, email, password, created_at)
+Filmek (id, title, director, category, released, description, created_at)
+Értékelések (id, rating, user_id, movie_id, created_at)
+Kommentek (id, comment, user_id, movie_id, parent, created_at)
+Kategóriák (id, name)
+
 [Vizuális Adatbázis Diagram Megtekintése](https://dbdiagram.io/d/Webshop-terv-68d53597d2b621e422e34d8d)
 ## Implementációs terv
 

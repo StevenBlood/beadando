@@ -29,7 +29,6 @@ Adminisztrátor
 - filmek megtekintése borítóképről
 - filmek értékelése  
 - filmek hozzáadása
-- 
 Felhasználó
 - bejelentkezés  
 - filmek megtekintése borítókép alapján  

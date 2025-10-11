@@ -24,3 +24,27 @@ section
     height: auto;
     width: 100%; 
 }
+
+.button1 {
+    background-color: #0f3f39;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    
+    padding: 10px 20px;
+    margin: 5px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button1:hover {
+    background-color: #13cfb9;
+    color: white;
+}

@@ -13,6 +13,13 @@ h1 {
     font-size: 75px;
 }
 
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
 section
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -20,7 +27,7 @@ section
 }
 
 .logo {
-    max-width: 450px; 
+    max-width: 300px; 
     height: auto;
     width: 100%; 
 }
@@ -47,4 +54,39 @@ section
 .button1:hover {
     background-color: #13cfb9;
     color: white;
+}
+
+/* 1. FLEXBOX TÁROLÓ (a sortöréshez és felosztáshoz) */
+.topMovesFelsorolva {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: center;
+}
+
+/* 2. A LINK KONTÉNER (a dinamikus szélesség és hover alapja) */
+.listed {
+    flex: 1 1 200px; /* Az '1 1 200px' felosztja a rendelkezésre álló helyet */
+    
+    /* Magasságot állíthatsz be itt, ha fix magasságot szeretnél */
+    height: 300px; 
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; 
+    cursor: pointer;
+    text-decoration: none; 
+}
+
+/* 3. A KÉP (GARANTÁLT KITÖLTÉS) */
+.listed img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; /* Fontos: megakadályozza a kép torzulását kitöltés közben */
+    display: block;
+}
+
+/* 4. HOVER EFFEKTUS */
+.listed:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 1);
+    height: 320px;
 }

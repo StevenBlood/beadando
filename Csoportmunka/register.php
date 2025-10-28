@@ -1,28 +1,52 @@
 <?php
 session_start();
 
-    $hibak = [];
-    $siker = "";
+$hibak = [];
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nev = $_POST['felhasznalonev'] ?? '';
-    $emailcim = $_POST['emailcim'] ?? '';
-    $jelszo= $_POST['jelszo'] ?? '';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    if(strlen($nev)< 3 ){
+    $nev = $_POST['username'] ?? '';
+    $emailcim = $_POST['email'] ?? '';
+    $jelszo = $_POST['password'] ?? '';
+    $jelszo_megerosites = $_POST['password_confirm'] ?? '';
+    $szuletesi_datum = $_POST['szulDatum'] ?? '';
+
+    $allomany = 'users.json';
+    $adatok = file_exists($allomany) ? json_decode(file_get_contents($allomany), true) : [];
+
+    // --- Egyediség ellenőrzése ---
+    foreach ($adatok as $f) {
+        if ($f['username'] === $nev) {
+            $hibak[] = "Ez a felhasználónév már foglalt!";
+            break;
+        }
+    }
+    foreach ($adatok as $f) {
+        if ($f['email'] === $emailcim) {
+            $hibak[] = "Ezzel az e-mail címmel már regisztráltak!";
+            break;
+        }
+    }
+
+    // --- Validációk ---
+    if (strlen($nev) < 3) {
         $hibak[] = "A felhasználónévnek legalább 3 karakter hosszúnak kell lennie!";
     }
 
-    if(!filter_var($emailcim, FILTER_VALIDATE_EMAIL)){
+    if (!filter_var($emailcim, FILTER_VALIDATE_EMAIL)) {
         $hibak[] = "Érvénytelen e-mail cím.";
     }
 
-    if(strlen($jelszo) < 8){
+    if ($jelszo !== $jelszo_megerosites) {
+        $hibak[] = "A két jelszó nem egyezik meg!";
+    }
+    
+    if (strlen($jelszo) < 8) {
         $hibak[] = "A jelszónak minimum 8 karakter hosszúságúnak kell lennie.";
     }
-    if(!preg_match("/[A-Z]/",$jelszo))
-        $hibak[]="A jelszónak tartalmaznia kell legalább egy nagybetűt.";
-    
+    if (!preg_match("/[A-Z]/", $jelszo)) {
+        $hibak[] = "A jelszónak tartalmaznia kell legalább egy nagybetűt.";
+    }
     if (!preg_match("/[a-z]/", $jelszo)) {
         $hibak[] = "A jelszónak tartalmaznia kell legalább egy kisbetűt.";
     }
@@ -33,28 +57,27 @@ session_start();
         $hibak[] = "A jelszónak tartalmaznia kell legalább egy speciális karaktert.";
     }
 
-     if (empty($hibak)) {
-        $sikeresReg = " Sikeres regisztráció!";
+    // --- Sikeres regisztráció ---
+    if (empty($hibak)) {
+        $felhasznalo = [
+            'username' => $nev,
+            'email' => $emailcim,
+            'password' => password_hash($jelszo, PASSWORD_DEFAULT),
+            'szulDatum' => $szuletesi_datum
+        ];
         
-         $felhasznalo = [
-        'felhasznalonev' => $nev,
-        'email' => $emailcim,
-        'jelszo' => password_hash($jelszo, PASSWORD_DEFAULT)
+        $adatok[] = $felhasznalo;
+        file_put_contents($allomany, json_encode($adatok, JSON_PRETTY_PRINT));
         
-    ];
+        // Sikeres regisztráció után átirányítás a bejelentkezési oldalra
+        header("Location: login_form.html?regsuccess=1");
+        exit;
+    } 
     
-    $allomany = 'felhasznalok.json';
-    if(file_exists($allomany)){
-        $adatok = json_decode(file_get_contents($allomany), true);
-    
-    } else{
-        $adatok = [];
-    }
-
-    $adatok[] = $felhasznalo;
-     file_put_contents($allomany, json_encode($adatok, JSON_PRETTY_PRINT));
-     header("Location: login.php");
-     exit;
-    
-    }
-} 
+    // --- Hibás regisztráció ---
+    $_SESSION['hibak'] = $hibak;
+    $_SESSION['input'] = ['username' => $nev, 'email' => $emailcim];
+    header("Location: register_form.html");
+    exit;
+}
+?>
